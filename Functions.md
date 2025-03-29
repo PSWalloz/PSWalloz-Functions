@@ -45,9 +45,9 @@ print(connection) -- should print the connection index
 function info(string text)
 ```
 
-Prints in the developer console but a information print
+This prints text to the console as information also known as Blue print
 
 ### Example
 ```luau
-info("Hello, world!") -- Outputs blue text/information
+info("Hello, world!") -- Outputs blue print/information
 ```
