@@ -34,7 +34,7 @@ Creates a list of Connection objects for the functions connected to signal.
 local inputService = game:GetService("UserInputService")
 local connection = getconnection(inputService.InputBegan, 1)
 
-print(connection) -- should print
+print(connection) -- should print the connection index
 ```
 
 ## info
