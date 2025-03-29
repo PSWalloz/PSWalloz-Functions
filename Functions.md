@@ -31,7 +31,7 @@ Creates a list of Connection objects for the functions connected to signal.
 
 Returns a Connection object for index
 
-### Examples
+### Example
 ```luau
 local inputService = game:GetService("UserInputService")
 local connection = getconnection(inputService.InputBegan, 1)
@@ -39,3 +39,15 @@ local connection = getconnection(inputService.InputBegan, 1)
 print(connection) -- should print the connection index
 ```
 
+## info
+
+```luau
+function info(string text)
+```
+
+Prints in the developer console but a information print
+
+### Example
+```luau
+info("Hello, world!") -- Outputs blue text/information
+```
