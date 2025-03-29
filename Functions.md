@@ -29,5 +29,16 @@ Creates a list of Connection objects for the functions connected to signal.
 <table<ConnectionObject>> getconnection(<RBXScriptSignal> signal, <number> index)
 ```
 
+###Examples
+```luau
+local inputService = game:GetService("UserInputService")
+local connection = getconnection(inputService.InputBegan, 1)
+
+print(connection) -- should print
+```
+
+## info
+
+
 Returns a Connection object for index
 
