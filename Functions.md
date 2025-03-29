@@ -5,8 +5,6 @@
 ```
 Creates a list of Connection objects for the functions connected to signal.
 
-### kaka
-
 | Field | Type | Description |
 | ----- | ---- | ----------- |
 | `Enabled` | boolean | Whether the connection can receive events. |
