@@ -5,6 +5,7 @@
 ```
 Creates a list of Connection objects for the functions connected to signal.
 
+
 | Field | Type | Description |
 | ----- | ---- | ----------- |
 | `Enabled` | boolean | Whether the connection can receive events. |
@@ -13,6 +14,13 @@ Creates a list of Connection objects for the functions connected to signal.
 | `Function` | function? | The function bound to this connection. Nil when ForeignState is true. |
 | `Thread` | thread? | The thread that created the connection. Nil when ForeignState is true. |
 
+| Field | Description |
+| ----- | ----------- |
+| `Fire(...: any): ()` | Fires this connection with the provided arguments. |
+| `Defer(...: any): ()` |  Defers an event to connection with the provided arguments. |
+| `Disconnect(): ()` | Disconnects the connection. |
+| `Disable(): ()` | Prevents the connection from firing. |
+| `Enable(): ()` | Allows the connection to fire if it was previously disabled. |
 
 
 ## getconnection
