@@ -1,3 +1,16 @@
+## info
+
+```luau
+function info(string text)
+```
+
+This prints text to the console as information also known as Blue print
+
+### Example
+```luau
+info("Hello, world!") -- Outputs blue print/information
+```
+
 ## getconnections
 
 ```lua
@@ -37,17 +50,4 @@ local inputService = game:GetService("UserInputService")
 local connection = getconnection(inputService.InputBegan, 1)
 
 print(connection) -- should print the connection index
-```
-
-## info
-
-```luau
-function info(string text)
-```
-
-This prints text to the console as information also known as Blue print
-
-### Example
-```luau
-info("Hello, world!") -- Outputs blue print/information
 ```
