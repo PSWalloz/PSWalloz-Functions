@@ -11,31 +11,6 @@ This prints text to the console as information also known as Blue print
 info("Hello, world!") -- Outputs blue print/information
 ```
 
-## getconnections
-
-```lua
-<table<ConnectionObject>> getconnections(<RBXScriptSignal> signal)
-```
-Creates a list of Connection objects for the functions connected to signal.
-
-
-| Field | Type | Description |
-| ----- | ---- | ----------- |
-| `Enabled` | boolean | Whether the connection can receive events. |
-| `ForeignState` | boolean | Whether the function was connected by a foreign Luau state (i.e. CoreScripts). |
-| `LuaConnection` | boolean | Whether the connection was created in Luau code. |
-| `Function` | function? | The function bound to this connection. Nil when ForeignState is true. |
-| `Thread` | thread? | The thread that created the connection. Nil when ForeignState is true. |
-
-| Field | Description |
-| ----- | ----------- |
-| `Fire(...: any): ()` | Fires this connection with the provided arguments. |
-| `Defer(...: any): ()` |  Defers an event to connection with the provided arguments. |
-| `Disconnect(): ()` | Disconnects the connection. |
-| `Disable(): ()` | Prevents the connection from firing. |
-| `Enable(): ()` | Allows the connection to fire if it was previously disabled. |
-
-
 ## getconnection
 
 ```luau
