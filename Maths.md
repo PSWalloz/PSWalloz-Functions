@@ -1,6 +1,6 @@
 A math library for Roblox exploiting typically aims to provide utilities that make tasks like aimbots, ESPs, silent aim, tracers, and general world manipulation easier. These libraries are used to work with Roblox's 3D world and camera system. Here's what a solid math lib should generally include:
 
-🔢 Basic Math Functions
+# 🔢 Basic Math Functions
 clamp(value, min, max)
 
 lerp(a, b, t)
